@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODD's contact-page</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="contact-preloader"></div>
+  <div class="container contact-container">
+    <header >
+      <nav>
+        <div class="logo"><span><span class="T">T</span>ODDMILLION</span>
+        </div>
+        
+        <ul class="nav-links">
+          <li><a href="../index.html" class="active" >home</a></li>
+
+          <li><a href="../ABOUT-PAGE/about.html" data-after="ABOUT">about</a></li>
+          <li><a href="./contact.html">contact</a></li>
+          <li class="number">
+            <img src="../ABOUT-PAGE/main-img/phone-icon.png" alt="">
+            <span>+234</span></li>
+          
+        </ul>          
+      </nav>
+        <img src="../ABOUT-PAGE/main-img/hamburger.png" alt="" class="hamburger " id="hamburger">
+    </header>
+    <div class="contact-page" >
+      <h2 class="contact-page-title">
+        Contact<span>TODD</span>
+      </h2>
+      <div class="social-links">
+        
+        <div class="social-handles">
+          <div class="handle">
+            <a href="">
+              <img src="../ABOUT-PAGE/main-img/facebook.png" alt="">
+            </a></div>
+          <div class="handle">
+            <a href="https://wa.me/2347081186005">
+              <img src="../ABOUT-PAGE/main-img/whatsapp.png" alt="">
+            </a>
+          </div>
+          <div class="handle">
+            <a href="">
+              <img src="../ABOUT-PAGE/main-img/instagram.png" alt="">
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="contact-details">
+      <div class="contact-item">
+        <h2 class="logo">Let's get in touch</h2>
+        <p>
+          Have a question?<br> Reach out to <span class="logo">TODDMILLION</span> dedicated team. We're here to help!
+        </p>
+        <ul>
+          <li>
+            <img src="../ABOUT-PAGE/main-img/address.png" alt="">
+             <p>Ogolonto,Ikorudu, Lagos State</p> 
+          </li>
+          <li>
+            <img src="../ABOUT-PAGE/main-img/email.png" alt="">
+             <p>finnyphilip@gmail.com</p>
+          </li>
+          <li>
+            <img src="../ABOUT-PAGE/main-img/phone.png" alt="">
+            <p>08154138850 && 09154301770</p>
+          </li>
+          
+        </ul>
+        <div class="contact-us-with">
+          <p>Connect with us; We can cover all your designs</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <nav>
+        <div class="logo"><span><span class="T">T</span>ODDMILLION</span>
+        </div>
+        <div class="quicklinks">
+          <h2>QuickLinks</h2>
+          <ul class="nav-links">
+            <li><a  href="../index.html" class="active" data-after="HOME">home</a></li>
+            
+            <li><a  href="../ABOUT-PAGE/about.html" data-after="ABOUT">about</a></li>
+            <li><a href="./contact.html" data-after="CONTACT">contact</a></li>
+         
+          </ul>
+        </div>
+        <div class="contact">
+          <h2>Contact</h2>
+            <ul>
+          <li>
+            <div class="social-links">
+           
+              <div class="social-handles">
+                <div class="handle">
+                  <a href="">
+                    <img src="../ABOUT-PAGE/main-img/facebook.png" alt="">
+                  </a></div>
+                <div class="handle">
+                  <a href="https://wa.me/2347081186005">
+                    <img src="../ABOUT-PAGE/main-img/whatsapp.png" alt="">
+                  </a>
+                </div>
+                <div class="handle">
+                  <a href="">
+                    <img src="../ABOUT-PAGE/main-img/instagram.png" alt="">
+                  </a>
+                </div>
+              </div>
+          </li>
+          <li>
+            <img src="../ABOUT-PAGE/main-img/email-icon.png" alt="">
+            <span>finnyphilip@gmail.com</span>
+          </li>
+          <li>
+            <img src="../ABOUT-PAGE/main-img/phone-icon.png" alt="">
+            <span>08154138850</span>
+          </li>
+          
+        </ul>
+        </div>
+      </nav>
+       
+      <div class="footer-final">&copy;2024TODDMILLIONSTITCHES. All rights reserved
+        <p>...Designed and developed by <a href="#">FINIDI</a></p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // script for harmburger
+    let hamburger = document.getElementById('hamburger')
+    hamburger.addEventListener('click',()=>{
+
+      document.querySelector('nav ul').classList.toggle('display-menu')
+      hamburger.classList.toggle('hamburger-border')
+      
+    })
+    window.addEventListener('load',()=>{
+    setTimeout(preloaderFunction,100)
+    })
+     let preloaderFunction=()=>{
+    let preloader = document.querySelector('.contact-preloader');
+    preloader.style.display='none';
+    document.querySelector("body .container").style.display='block';
+    }
+  </script>
+</body>
+</html>
